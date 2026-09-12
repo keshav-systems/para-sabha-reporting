@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@source "./index.html";
+@source "./script.js";
+
+/* Import Gujarati Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Noto Sans Gujarati', sans-serif;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
