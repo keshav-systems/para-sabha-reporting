@@ -12,19 +12,20 @@
     <header class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
         <div>
             <h1 class="text-2xl md:text-3xl font-bold text-slate-800">Weekly Sabha Report</h1>
-            <!-- The Week Range Label -->
-            <p class="text-slate-500 font-medium text-sm mt-1" id="weekRangeLabel">Loading week...</p>
+            <p class="text-slate-500 font-medium text-sm mt-1" id="weekRangeLabel">Loading data...</p>
         </div>
         
-        <!-- Controls: Previous, Date Picker, Next -->
-        <div class="flex items-center gap-2 bg-white p-2 rounded-lg shadow-sm border border-slate-200">
-            <button id="prevWeekBtn" class="p-2 hover:bg-slate-100 rounded-md text-slate-600 transition" title="Previous Week">
+        <!-- Controls: Previous & Next -->
+        <div class="flex items-center bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
+            <button id="prevWeekBtn" class="px-4 py-2 hover:bg-slate-50 text-slate-600 transition flex items-center gap-2 font-medium text-sm" title="Previous Week">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                Previous
             </button>
             
-            <input type="date" id="weekPicker" class="font-semibold text-slate-700 bg-transparent border-none outline-none cursor-pointer px-2">
+            <div class="w-px h-6 bg-slate-200"></div> <!-- Vertical Divider -->
             
-            <button id="nextWeekBtn" class="p-2 hover:bg-slate-100 rounded-md text-slate-600 transition" title="Next Week">
+            <button id="nextWeekBtn" class="px-4 py-2 hover:bg-slate-50 text-slate-600 transition flex items-center gap-2 font-medium text-sm" title="Next Week">
+                Next
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
         </div>
