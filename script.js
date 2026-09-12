@@ -1,4 +1,4 @@
-const API_URL = 'https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnT0iIG7haLJbX6tBIP-sl8k9VmiYG4oTgM5-f5Lur63dS6fRQz9Ys9jX1vhz4U2cIIXd9GiFE6UGlmoMnMbLcrUGV1dVZsKYprWnkfWBSMqxgb-72Zd0y_2fhqj15evddg68IA-gTFdONet--npAbRjFTQKzH0QkGqUbbzCOA-sGhjUlXw2QwQPFL6ri2d1IWO0PRZDSRl3JNJar4A9ezkbummtBoxt7YXSVENVp0OlYl_JZygQ4Rjm7PvM6oTrNC9VUWdhvcJ0T_qWTPasruTAqA7tRA{{MY_SECRET_API_URL}}lib=MqCBmrsP_A5lDDmz-ZAZEOiJg1ExKH0On';
+const API_URL = 'https://script.google.com/macros/s/AKfycbyqqWJjsfE-FPciB5LpHUyLODi6fPapqOhTY1kroPp4u6sCZHeDevMUP3bDiQ-S1D1e/exec';
 
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const board = document.getElementById('board');
