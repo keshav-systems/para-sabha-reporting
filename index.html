@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Sabha Report</title>
     <link rel="icon" href="data:,">
+    <!-- Link to your Tailwind v4 compiled CSS -->
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="bg-slate-100 min-h-screen p-4 md:p-8">
@@ -15,7 +16,7 @@
             <p class="text-slate-600 font-medium text-sm mt-1" id="weekRangeLabel">Loading current week...</p>
         </div>
         
-        <!-- Controls: Previous & Next -->
+        <!-- Controls: Previous, Current, Next -->
         <div class="flex items-center bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
             <button id="prevWeekBtn" type="button" class="px-4 py-2 hover:bg-slate-50 text-slate-700 transition flex items-center gap-2 font-medium text-sm border-r border-slate-200">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
@@ -32,7 +33,7 @@
     </header>
 
     <div id="board" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 items-start">
-        <!-- Columns will be injected here -->
+        <!-- Columns injected via JavaScript -->
     </div>
 
     <script src="script.js"></script>
