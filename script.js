@@ -1,5 +1,5 @@
 // GitHub Action replaces this placeholder at build time
-const API_URL = 'https://script.google.com/macros/s/AKfycbyqqWJjsfE-FPciB5LpHUyLODi6fPapqOhTY1kroPp4u6sCZHeDevMUP3bDiQ-S1D1e/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbw6-rwh10FP-CVCnumolvpfa-Y9LyGwza4AEEMzZhmo5AQCRf39n3ioTMwduqtCBdKa/exec';
 
 // UI Elements
 const board = document.getElementById('board');
@@ -154,7 +154,6 @@ function loadData() {
 }
 
 // --- RENDER CURRENT ACTIVE WEEK ---
-
 function renderWeek() {
     const monday = getActiveWeekMonday(weekOffset);
     const saturday = new Date(monday);
