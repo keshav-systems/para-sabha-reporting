@@ -154,7 +154,6 @@ function loadData() {
 }
 
 // --- RENDER CURRENT ACTIVE WEEK ---
-
 function renderWeek() {
     const monday = getActiveWeekMonday(weekOffset);
     const saturday = new Date(monday);
