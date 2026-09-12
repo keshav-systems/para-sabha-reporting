@@ -12,27 +12,27 @@
     <header class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
         <div>
             <h1 class="text-2xl md:text-3xl font-bold text-slate-800">Weekly Sabha Report</h1>
-            <p class="text-slate-500 font-medium text-sm mt-1" id="weekRangeLabel">Loading data...</p>
+            <p class="text-slate-600 font-medium text-sm mt-1" id="weekRangeLabel">Loading current week...</p>
         </div>
         
         <!-- Controls: Previous & Next -->
         <div class="flex items-center bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-            <button id="prevWeekBtn" class="px-4 py-2 hover:bg-slate-50 text-slate-600 transition flex items-center gap-2 font-medium text-sm" title="Previous Week">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <button id="prevWeekBtn" type="button" class="px-4 py-2 hover:bg-slate-50 text-slate-700 transition flex items-center gap-2 font-medium text-sm border-r border-slate-200">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
                 Previous
             </button>
-            
-            <div class="w-px h-6 bg-slate-200"></div> <!-- Vertical Divider -->
-            
-            <button id="nextWeekBtn" class="px-4 py-2 hover:bg-slate-50 text-slate-600 transition flex items-center gap-2 font-medium text-sm" title="Next Week">
+            <button id="todayBtn" type="button" class="px-3 py-2 hover:bg-slate-50 text-blue-600 transition font-medium text-sm border-r border-slate-200" title="Jump to Current Week">
+                Current Week
+            </button>
+            <button id="nextWeekBtn" type="button" class="px-4 py-2 hover:bg-slate-50 text-slate-700 transition flex items-center gap-2 font-medium text-sm">
                 Next
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
             </button>
         </div>
     </header>
 
-    <div id="board" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 items-start">
-        <!-- Columns will be injected here by JavaScript -->
+    <div id="board" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 items-start">
+        <!-- Columns will be injected here -->
     </div>
 
     <script src="script.js"></script>
